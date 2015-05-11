@@ -1,0 +1,11 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"GitGutter",
+		"Package Control",
+		"Predawn"
+	]
+}

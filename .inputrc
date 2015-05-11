@@ -1,0 +1,7 @@
+# make tab completion case-insensitive
+set completion-ignore-case on
+
+# base up/down results on text that
+# has already been typed
+"\e[B": history-search-forward
+"\e[A": history-search-backward
