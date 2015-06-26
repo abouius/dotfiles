@@ -4,8 +4,12 @@
 	],
 	"installed_packages":
 	[
+		"Better CoffeeScript",
+		"CoffeeCompile",
 		"GitGutter",
 		"Package Control",
-		"Predawn"
+		"Predawn",
+		"Theme - itg.flat",
+		"Theme - Spacegray"
 	]
 }
