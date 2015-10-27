@@ -6,18 +6,21 @@
 	"auto_match_enabled": false,
 	"caret_style": "phase",
 	"coffee_path": "/usr/local/bin",
-	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"detect_indentation": false,
 	"draw_minimap_border": false,
+	"enable_tab_scrolling": true,
+	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
+	"font_face": "Consolas",
 	"font_options":
 	[
 		"no_italic",
 		"no_round"
 	],
-	"font_size": 12,
-	"highlight_line": true,
-	"highlight_modified_tabs": false,
+	"font_size": 15.5,
+	"highlight_line": false,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -32,11 +35,14 @@
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"smart_indent": true,
+	"spacegray_sidebar_font_large": true,
 	"spacegray_sidebar_tree_large": true,
+	"spacegray_tabs_auto_width": false,
+	"spacegray_tabs_font_normal": true,
 	"spacegray_tabs_xlarge": true,
 	"tab_size": 2,
 	"tabs_medium": true,
-	"theme": "predawn-DEV.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false

@@ -11,7 +11,8 @@ alias ga="git add -A"
 alias gb="git branch"
 alias gp="git pull --rebase"
 alias co="git checkout"
-alias gpo="git remote prune origin"
+alias clean_git_branches="git remote prune origin; git branch --merged | grep -v '\*' | grep -v dev | xargs -n 1 git branch -d"
+
 alias s="subl"
 
 # stop typing "bundle exec"

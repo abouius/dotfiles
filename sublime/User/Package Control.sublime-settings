@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -9,6 +10,7 @@
 		"GitGutter",
 		"Package Control",
 		"Predawn",
+		"RemoteCollab",
 		"Theme - itg.flat",
 		"Theme - Spacegray"
 	]
