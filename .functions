@@ -15,9 +15,9 @@ run_bundler_cmd () {
 
 goto_projects_dir () {
   if [ -d $HOME/Projects ]; then
-    cd $HOME/Projects
+    cd $HOME/Projects/$1
   elif [ -d $HOME/source ]; then
-    cd $HOME/source
+    cd $HOME/source/$1
   else
     echo "Unable to find a project directory."
   fi
