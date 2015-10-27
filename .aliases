@@ -6,42 +6,31 @@ alias l="ls -la"
 alias ll="ls -l"
 alias la="ls -la"
 
+alias s="subl"
+alias cdp="goto_projects_dir"
+
 alias gs="git status"
 alias ga="git add -A"
 alias gb="git branch"
 alias gp="git pull --rebase"
 alias co="git checkout"
-alias clean_git_branches="git remote prune origin; git branch --merged | grep -v '\*' | grep -v dev | xargs -n 1 git branch -d"
+alias git_clean_branches="git remote prune origin; git branch --merged | grep -v '\*' | grep -v dev | xargs -n 1 git branch -d"
 
-alias s="subl"
+alias nginx.start="sudo nginx"
+alias nginx.stop="sudo nginx -s quit"
+alias nginx.restart="sudo nginx -s reload"
+alias nginx.test="sudo nginx -t"
 
-# stop typing "bundle exec"
-run_bundler_cmd () {
-  if [ -e ./Gemfile ]; then
-    echo "bundle exec $@"
-    bundle exec $@
-  else
-    $@
-  fi
-}
+alias php-fpm.start="sudo /usr/local/sbin/php-fpm"
+alias php-fpm.stop="php_fpm_stop"
+alias php-fpm.restart="php-fpm.stop; php-fpm.start"
 
+# favor using bundle exec
 bundle_commands="irb rake pry spec rspec puma rails rackup guard"
 for cmd in $bundle_commands
   do alias $cmd="run_bundler_cmd $cmd"
 done
-
-# switch projects faster
-if [ -d "$HOME/Projects" ]; then
-  PROJECTS="$HOME/Projects"
-elif [ -d "$HOME/source" ]; then
-  PROJECTS="$HOME/source"
-fi
-
-cd_project_dir() {
-  cd $PROJECTS/$1
-}
-
-alias cdp="cd_project_dir"
+unset cmd bundle_commands
 
 # toggle hidden files
 alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -54,6 +43,3 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # hide/show desktop icons
 alias hide_desktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias show_desktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# cleanup
-unset bundle_commands

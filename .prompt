@@ -1,6 +1,6 @@
 # source git scripts
-source $DOTFILES/git/git-prompt.sh
-source $DOTFILES/git/git-completion.bash
+source $DOTFILES_DIR/git/git-prompt.sh
+source $DOTFILES_DIR/git/git-completion.bash
 
 # add some colors
 export CLICOLOR=1
