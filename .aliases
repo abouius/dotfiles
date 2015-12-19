@@ -6,15 +6,15 @@ alias l="ls -la"
 alias ll="ls -l"
 alias la="ls -la"
 
-alias s="subl"
-alias cdp="goto_projects_dir"
+alias cdp="goto_project_dir"
 
 alias gs="git status"
 alias ga="git add -A"
 alias gb="git branch"
 alias gp="git pull --rebase"
 alias co="git checkout"
-alias git_clean_branches="git remote prune origin; git branch --merged | grep -v '\*' | grep -v dev | xargs -n 1 git branch -d"
+alias undo_commit="git reset --soft HEAD~"
+alias clean_branches="git remote prune origin; git branch --merged | grep -v '\*' | grep -v dev | xargs -n 1 git branch -d"
 
 alias nginx.start="sudo nginx"
 alias nginx.stop="sudo nginx -s quit"

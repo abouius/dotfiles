@@ -1,0 +1,28 @@
+"*":
+  "autocomplete-plus":
+    autoActivationDelay: 1000
+  "bracket-matcher":
+    autocompleteBrackets: false
+    autocompleteSmartQuotes: false
+    wrapSelectionsInBrackets: false
+  core:
+    disabledPackages: [
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "metrics"
+      "exception-reporting"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    invisibles: {}
+    tabType: "soft"
+  preview:
+    _analyticsUserId: "c520e235-571d-4af7-82c6-1a59b1515539"
+  tabs:
+    usePreviewTabs: true
+  welcome:
+    showOnStartup: false
+".preview":
+  editor:
+    softWrap: false
