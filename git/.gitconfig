@@ -1,11 +1,13 @@
+[user]
+  signingkey = 2B6DC036CF69A553
 [color]
-  ui = true
+	ui = true
 [push]
-  default = current
+	default = current
 [branch]
-  autosetuprebase = always
+	autosetuprebase = always
 [rerere]
-  enabled = 1
+	enabled = 1
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -21,3 +23,5 @@
   untracked = cyan
 [include]
   path = ~/.gitconfig.local
+[commit]
+  gpgsign = true
