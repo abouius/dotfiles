@@ -1,7 +1,5 @@
-# Make tab completion case-insensitive
-set completion-ignore-case on
-
-# Use already typed text as filter for searching through previous
-# commands (i.e. more intelligent Up/Down behavior)
-"\e[B": history-search-forward
+# Use typed text as filter for previous commands
 "\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
