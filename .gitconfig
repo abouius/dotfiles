@@ -1,5 +1,3 @@
-[include]
-  path = ~/.gitconfig.local
 [color]
 	ui = true
 [push]
@@ -11,15 +9,13 @@
 [color "branch"]
   current = yellow reverse
   local = yellow
-  remote = green
+  remote = 120
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
   old = red bold
-  new = green bold
+  new = 120 bold
 [color "status"]
   added = yellow
-  changed = green
+  changed = 120
   untracked = cyan
-[commit]
-  gpgsign = true
