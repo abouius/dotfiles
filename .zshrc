@@ -18,11 +18,15 @@ PROMPT='%F{013}%~%f%B$vcs_info_msg_0_%b '
 # Case-insensitive tab completion
 set completion-ignore-case on
 
+cd_code_dir() {
+  cd ~/Code/$1
+}
+
 # Aliases
 alias d="docker"
 alias dd="docker-compose"
 alias la="ls -la"
-alias cdp="cd ~/Code"
+alias cdp="cd_code_dir"
 alias gb="git branch"
 alias gs="git status"
 alias ga="git add -A"
