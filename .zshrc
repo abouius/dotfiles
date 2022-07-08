@@ -19,6 +19,8 @@ PROMPT='%F{013}%~%f%B$vcs_info_msg_0_%b '
 set completion-ignore-case on
 
 # Aliases
+alias d="docker"
+alias dd="docker-compose"
 alias la="ls -la"
 alias cdp="cd ~/Code"
 alias gb="git branch"
