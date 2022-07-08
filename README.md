@@ -1,7 +1,6 @@
 # Dotfiles
 
-### Setup
-Close the repository
+Clone the repository
 ```
 git clone git@github.com:aribouius/dotfiles.git ~/.dotfiles
 ```
@@ -12,7 +11,7 @@ ln -sf ~/.dotfiles/.zshrc ~
 ln -sf ~/.dotfiles/.inputrc ~
 ```
 
-Copy gitconfig template
+Copy .gitconfig template
 ```
 cp ~/.dotfiles/.gitconfig.example ~/.gitconfig
 ```
