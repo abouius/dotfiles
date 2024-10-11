@@ -2,6 +2,8 @@
 # https://www.tweaking4all.com/software/macosx-software/customize-zsh-prompt/
 # https://www.tweaking4all.com/software/macosx-software/xterm-color-cheat-sheet/
 
+# export PATH="$PATH:`pwd`/Code/flutter/bin"
+
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 
@@ -19,12 +21,12 @@ PROMPT='%F{013}%~%f%B$vcs_info_msg_0_%b '
 set completion-ignore-case on
 
 cd_code_dir() {
-  cd ~/Code/$1
+  cd ~/Developer/$1
 }
 
 # Aliases
 alias d="docker"
-alias dd="docker-compose"
+alias dd="docker compose"
 alias la="ls -la"
 alias cdp="cd_code_dir"
 alias gb="git branch"
